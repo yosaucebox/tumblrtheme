@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<!--
+     Theme: 2993 v1.1
+     Design: Behrad Ghadiri (http://behradghadiri.com)
+     Publisher: Semidome Inc. (http://semido.me)
+-->
+
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>{Title}</title>
+	{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+
+    <meta name="color:Background Color" content="#FFFFFF"/>
+    <meta name="color:Highlight Color" content="#0000FF"/>
+    <meta name="color:Footer Color" content="#666666"/>
+	<meta name="color:Text" content="#000000"/>
+	<meta name="color:Audio Background" content="#EEEEEE"/>
+
+    <meta name="if:Endless scrolling" content="1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+
+    html {
+        margin: 0;
+		padding: 0;
+
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		background: {color:Background Color};
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		-o-font-smoothing: antialiased;
+		font-size: 14px;
+        font-weight:400;
+		color: {color:Text};
+        font-family: 'Libre Baskerville', serif;
+        -webkit-text-size-adjust: none;
+	}
+
+	a {
+		color: {color:Highlight Color};
+		text-decoration: none;
+        font-weight:400;
+        font-style:italic;
+	}
+
+	a:hover {
+		color:{color:Highlight Color};
+		border-bottom:1px solid {color:Highlight Color};
+	}
+
+	.nounderline{
+	    max-width:100%;
+	    overflow:hidden;
+	}
+
+	.nounderline a:hover {
+		border-bottom:none;
+
+	}
+
+
+	.permanotes{
+		font-family: 'Open Sans', sans-serif;
+		display:none;
+		font-size:11px;
+		border:0x solid {color:Highlight Color};
+		color:{color:Highlight Color};
+		text-decoration:none;
+		background:transparent;
+		float:left;
+		text-align:center;
+		padding:5px 5px;
+		-o-transition:.5s;
+	  	-ms-transition:.5s;
+	  	-moz-transition:.5s;
+	  	-webkit-transition:.5s;
+	  	transition:.5s;
+		font-weight:700;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		font-style:normal;
+	}
+
+	.permanotes:hover{
+		background-color:{color:Highlight Color};
+		color:{color:Background Color};
+		border:0px solid {color:Highlight Color};
+	}
+
+	.permanotes:active{
+		background-color:{color:Highlight Color};
+		color:{color:Background Color};
+		border:0px solid {color:Highlight Color};
+	}
+
+
+	.footbutt{
+		font-family: 'Open Sans', sans-serif;
+		display:block;
+		font-size:11px;
+		border:1px solid {color:Footer Color};
+		color:{color:Footer Color};
+		text-decoration:none;
+		background:transparent;
+		float:left;
+		text-align:center;
+		margin-right:5px;
+		padding:5px 10px;
+		-o-transition:.5s;
+	  	-ms-transition:.5s;
+	  	-moz-transition:.5s;
+	  	-webkit-transition:.5s;
+	  	transition:.5s;
+		font-weight:700;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		font-style:normal;
+	}
+
+	.footbutt:hover{
+		background-color:{color:Footer Color};
+		color:{color:Background Color};
+		border:1px solid {color:Footer Color};
+	}
+
+	.footbutt:active{
+		background-color:{color:Footer Color};
+		color:{color:Background Color};
+		border:1px solid {color:Footer Color};
+	}
+
+
+
+	.blackbox{
+		font-family: 'Open Sans', sans-serif;
+		display:none;
+		font-size:11px;
+		border:1px solid {color:Footer Color};
+		color:{color:Footer Color};
+		text-decoration:none;
+		background:transparent;
+		text-align:center;
+		padding:5px 10px;
+		float:right;
+		margin:0px;
+		-o-transition:.5s;
+	  	-ms-transition:.5s;
+	  	-moz-transition:.5s;
+	  	-webkit-transition:.5s;
+	  	transition:.5s;
+		font-weight:700;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		font-style:normal;
+	}
+
+	.blackbox:hover{
+		background-color:{color:Footer Color};
+		color:{color:Background Color};
+		border:1px solid {color:Footer Color};
+	}
+
+	.blackbox:active{
+		background-color:{color:Footer Color};
+		color:{color:Background Color};
+		border:1px solid {color:Footer Color};
+	}
+
+
+
+	a:active,
+	a:focus {
+		color:{color:Highlight Color};
+		outline: 0;
+	}
+
+	a img { border-width: 0px; }
+
+	.clear {
+		clear: both;
+	}
+
+
+    #leftp {
+    	width: 100%;
+        display:block;
+        position:relative;
+        margin:200px 0px 0px 0px;
+		font-size:20px;
+		font-family: 'Libre Baskerville', serif;
+		background: transparent;
+
+	}
+
+	#leftp.mob {
+        margin-top:100px;
+	}
+
+	.seperateme{
+		height:1px;
+	}
+
+	#left {
+		width: 700px;
+		display:block;
+    	margin:0px auto;
+    	text-align:left;
+        padding: 0px;
+		background:transparent;
+
+	}
+
+    #rightp{
+		width:100%;
+		background:transparent;
+	}
+
+	#right {
+		text-align: left;
+        margin:0 auto;
+        max-width:700px;
+        background:transparent;
+        padding: 0px 0px 20px 0px;
+	}
+
+	#maker{
+	    text-align: center;
+	    overflow:hidden;
+        margin:0 auto;
+        max-width:700px;
+        background:transparent;
+        padding: 60px 0px 60px 0px;
+
+	}
+
+	.captiontext{
+		max-width:100%;
+		display: inline-block;
+		margin:0 auto;
+		line-height: 1.8em;
+		text-align:justify;
+	}
+
+	#right.mob .captiontext {
+		width:100%;
+	}
+
+	#right .post {
+		margin: 0px;
+		padding: 100px 0px 50px 0px;
+		width:700px;
+	}
+
+	#right.mob .post {
+		width:100%;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	#right .post h3 {
+		font-weight: normal;
+		margin: 0;
+	}
+
+
+	#right .post a.h3 {
+		font-style:italic;
+		text-decoration: none;
+		font-size: 1.5em;
+		margin: 0;
+	}
+
+	#right .post a.h3:hover {
+		background: none;
+		border-bottom:1px solid {color:Highlight Color};
+	}
+
+	#right .post a.h3.link:hover {
+		background: transparent;
+		border-bottom:1px solid {color:Highlight Color};
+	}
+
+	#right .post blockquote {
+		border-left: 2px solid {color:Highlight Color};
+		padding: 0 0 0 15px;
+		margin-left: 0px;
+	}
+
+	#right .post table {
+		margin: 10px 0;
+		border-collapse: collapse;
+	}
+
+	#right .post table tr {
+		margin: 1px 0;
+	}
+
+	#right .post table tr td {
+		padding: auto;
+		vertical-align: top;
+	}
+
+	#right .post table tr td.name {
+		text-align: right;
+		padding: 5px 15px 5px 0px;
+	}
+
+	#right .post table tr td.words {
+		width: 100%;
+		text-align: left;
+		padding: 5px;
+	}
+
+	ol.notes {
+        margin:0px 5px;
+        padding: 0px;
+        list-style-position: inside;
+     }
+
+    ol.notes img {
+        display: none;
+    }
+
+
+    #maker.mob{
+        width:100%;
+        padding:60px 0 20px 0;
+	}
+
+		#right.mob {
+        max-width: 250px;
+        width:250px;
+        margin:0 auto;
+	}
+
+		#left.mob{
+        max-width: 250px;
+        width:250px;
+        margin:0 auto;
+	}
+
+	#links{list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#links li{
+    display: inline;
+
+}
+
+	#links li:last-child{
+	    display:none;
+	}
+
+	.myartright{
+margin:0px auto;text-align:left;width:50%;float:right;text-align:center;
+}
+
+.myartleft{width:50%;float:left;}
+
+.myartright.mob{
+margin:0px auto;text-align:left;width:100%;float:right;text-align:center;
+}
+
+.myartleft.mob{width:100%;float:left;}
+
+
+	{CustomCSS}
+	</style>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://static.tumblr.com/viqeusy/bHin7zncj/infinitescroll.js"></script>
+
+    	<script type="text/javascript">
+  var jQis = jQuery.noConflict();
+  jQis(function($){
+     $(document).ready(function() {
+				var isMobile = navigator.userAgent.match(/(iPhone|iPod|Android|BlackBerry)/);
+				if(isMobile){
+					$('#right').addClass('mob');
+					$('#left').addClass('mob');
+					$('#leftp').addClass('mob');
+					$('#maker').addClass('mob');
+					$('.myartright').addClass('mob');
+					$('.myartleft').addClass('mob');
+
+					$('.nonmobilecont').hide();
+					$('.mobilecont').show();
+				}
+		});
+
+		{block:IfEndlessScrolling}
+		$('ul.allposts').infinitescroll({
+          debug           : false,
+          nextSelector    : "#nextpage",
+          text            : "",
+          donetext        : "No more posts.",
+          navSelector     : "div#maker",
+          contentSelector : "div#right",
+          itemSelector    : "div#right > .post"
+		},function(arrayOfNewElems){
+		    var isMobile = navigator.userAgent.match(/(iPhone|iPod|Android|BlackBerry)/);
+		    if(isMobile){
+		    $('.myartright').addClass('mob');
+			$('.myartleft').addClass('mob');
+			$('.nonmobilecont').hide();
+			$('.mobilecont').show();
+		    }
+      });
+      {/block:IfEndlessScrolling}
+
+  });
+  </script>
+
+
+
+
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}" />
+</head>
+<body>
+
+  <div id="leftp" style="{block:PermalinkPage}margin-top:100px;{/block:PermalinkPage}">
+  <div id="left">
+
+  	<title>{Title}</title>
+
+
+  <div style="padding:20px 0px ;margin:20px auto 0px auto;font-style:normal;font-weight:400;font-size:50px;overflow:hidden;">{Title}</div>
+
+  <ul id="links" style="margin:20px auto;">
+    {block:AskEnabled}
+       <li><a href="/ask">{AskLabel}</a></li>
+       <li> / </li>
+    {/block:AskEnabled}
+    {block:SubmissionsEnabled}
+       <li><a href="/submit">{SubmitLabel}</a></li>
+       <li> / </li>
+   {/block:SubmissionsEnabled}
+          {block:HasPages}
+              {block:Pages}
+                 <li><a href="{URL}">{Label}</a></li>
+                 <li> / </li>
+              {/block:Pages}
+          {/block:HasPages}
+          {block:Twitter}
+           <li><a href="http://twitter.com/{TwitterUsername}">Twitter</a></li>
+           <li> / </li>
+          {/block:Twitter}
+
+</ul>
+
+  	 <div style="font-size:15px;margin:0 auto;">{block:Description}{Description}{/block:Description}</div>
+
+
+  </div>
+
+
+
+  </div>
+<div id="rightp">
+  <div id="right">
+  	{block:Posts}
+
+  	<div class="post">
+  	{block:Text}
+  		{block:Title}<a href="{Permalink}" class="h3">{Title}</a>{/block:Title}
+  		<div class="seperateme"></div>
+  		<div class="captiontext">{Body}</div>
+  	{/block:Text}
+
+  	{block:Link}
+  		<a href="{URL}" class="h3 link">{Name}</a>
+  		<div class="seperateme"></div>
+  		<div class="captiontext">{block:Description}{Description}{/block:Description}</div>
+
+  	{block:Link}
+
+  	{block:Photo}
+  	<div class="nounderline">
+  		{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+  	</div>
+  		<div class="seperateme"></div>
+  		<div class="captiontext">{block:Caption}{Caption}{/block:Caption}</div>
+
+  	{/block:Photo}
+
+
+      {block:Panorama}
+    <div class="nounderline">{LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+
+    <div class="seperateme"></div>
+  		<div class="captiontext">{block:Caption}
+        {Caption}
+    {/block:Caption}
+    </div>
+{/block:Panorama}
+
+{block:Answer}
+    <div class="seperateme"></div><div class="captiontext">
+    <div class="question" style="padding:20px;"><div class="asker">{Asker} asked:</div><div class="asker-question">{Question}</div></div>
+
+    {block:Answerer}
+        <div class="answer"><div class="answerer-answer">{Answer}</div></div>
+    {/block:Answerer}
+
+    <div class="replies">
+        {Replies}
+    </div>
+    </div>
+{/block:Answer}
+
+
+      {block:Photoset}
+
+      <div class="nonmobilecont">
+                <div class="nounderline">
+    {Photoset-700}
+    </div>
+      </div>
+      <div class="mobilecont" style="display:none;">
+                <div class="nounderline">
+    {Photoset-250}
+    </div>
+      </div>
+
+    <div class="seperateme"></div>
+    <div class="captiontext">{block:Caption}{Caption}{/block:Caption}</div>
+
+{/block:Photoset}
+
+
+  	{block:Quote}
+  		<div class="captiontext"><h3>&#8220;{Quote}&#8221;</h3>
+  		      		<p>{block:Source}&mdash; {Source}{/block:Source}</p>
+
+  		</div>
+
+  	{/block:Quote}
+
+  	{block:Chat}
+  		{block:Title}<a href="#" class="h3">{Title}</a>{/block:Title}
+  		<table>
+  			{block:Lines}
+  			<tr>
+  				{block:Label}<td class="name">{Label}</td>{block:Label}
+  				<td class="words">{Line}</td>
+  			</tr>
+  			{/block:Lines}
+  		</table>
+
+  	{/block:Chat}
+
+  	{block:Audio}
+  	{block:AudioPlayer}
+     <div style="overflow:hidden;height:50%;width:100%;background:{color:Audio Background};">
+      {block:AlbumArt}
+<img src="{AlbumArtURL}" class="myartleft" />
+{/block:AlbumArt}
+
+
+
+
+<div class="myartright">
+
+
+<div style="font-size:13px;">
+          {block:TrackName}
+<div style="font-style:italic;font-size:18px;margin:70px 0px 10px 0px;">{TrackName}</div>
+{/block:TrackName}
+{block:Artist}
+ by
+{Artist}
+{/block:Artist}
+</div>
+
+<div style="margin:60px auto;padding:5px 4px 1px 4px;background:white;width:210px;">
+
+  			{AudioPlayerWhite}
+
+</div>
+</div>
+
+
+</div>
+{/block:AudioPlayer}
+
+<div style="width:100%;overflow:hidden;">
+
+
+  		{block:AudioEmbed}
+
+  			<div class="nonmobilecont">{AudioEmbed}</div>
+<div class="mobilecont" style="display:none;">{AudioEmbed-250}</div>
+  		{/block:AudioEmbed}
+</div>
+
+<div class="seperateme"></div><div class="captiontext">{block:Caption}{Caption}{/block:Caption}</div>
+
+
+  	{/block:Audio}
+
+  	{block:Video}
+  		<div style="width:100%;margin:0px auto;">
+
+  		<div class="nonmobilecont">{Video-700}</div>
+<div class="mobilecont" style="display:none;">{Video-250}</div>
+
+  		</div>
+  		<div class="seperateme"></div>
+  		<div class="captiontext">{block:Caption}{Caption}{/block:Caption}</div>
+
+  	{/block:Video}
+
+  	{block:IndexPage}
+  	<p style="margin:0px 0px;"><a class="permanotes" href="{Permalink}">{Month}&nbsp;{DayOfMonth}{block:Date}{block:NoteCount}&nbsp;&nbsp;&bull;&nbsp;&nbsp;{NoteCountWithLabel}{/block:NoteCount}{block:Date}</a>{/block:Date}</p>
+  {/block:IndexPage}
+
+       {block:PermalinkPage}
+     {block:PostNotes}
+          <div style="border:1px solid #ccc;padding:20px 0px;border-left:none;border-right:none;margin:20px 0px 0px 0px;">
+    {PostNotes}
+    </div>
+    {/block:PostNotes}
+  {/block:PermalinkPage}
+
+
+  	</div>
+
+
+  	{/block:Posts}
+
+  	{block:IndexPage}
+  	{block:IfEndlessScrolling}
+		<div style="position:fixed;right:10px;bottom:10px;"><a class="blackbox" target="_blank" href="http://semido.me">Theme by Semidome</a></div>
+    {/block:IfEndlessScrolling}
+    {/block:IndexPage}
+
+  	<div id="maker">
+  		{block:Pagination}
+            {block:PreviousPage}
+                <a class="footbutt" href="{PreviousPage}">{lang:Back}</a>
+            {/block:PreviousPage}
+
+            <a class="blackbox" target="_blank" href="http://semido.me">Theme by Semidome</a>
+
+            {block:NextPage}
+                <a href="{NextPage}" class="footbutt" id="nextpage">{lang:Next}</a>
+            {/block:NextPage}
+        {/block:Pagination}
+  		{block:PermalinkPagination}
+  			{block:NextPost}
+  			<a href="{NextPost}" class="footbutt">{lang:Back}</a>
+  			{/block:NextPost}
+
+  			<a class="blackbox" target="_blank" href="http://semido.me">Theme by Semidome</a>
+
+  			{block:PreviousPost}
+  			<a href="{PreviousPost}" class="footbutt">{lang:Next}</a>
+  			{/block:PreviousPost}
+  		{/block:PermalinkPagination}
+  	</div>
+  </div>
+</div>
+
+
+
+<div class="clear"></div>
+
+</body>
+</html>
