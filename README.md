@@ -1,4 +1,4 @@
 tumblrtheme
 ===========
 
-A modified tumblr theme
+A modified tumblr theme that minimally displays photos.
